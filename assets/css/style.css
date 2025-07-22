@@ -1,0 +1,218 @@
+@import url(reset.css);
+
+.container{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-bottom: 5px;
+    border-bottom: solid 1px rgba(0, 0, 0, .25);
+}
+
+img{
+    object-fit: contain;
+}
+
+
+header #tool-bar{
+    display: flex;
+    margin: 10px;
+    display: flex;
+    gap: 10px;
+}
+header #search-bar{
+    display: flex;
+    border: solid 1px rgba(0, 0, 0, .25);
+}
+
+header #search-bar #input-search{
+    height: 40px;
+    width: 410px;
+    font-size: large;
+}
+
+header #search-bar #button-search{
+    height: 44px;
+    width: 44px;
+    background-image: url('../images/search-icon.png');
+    background-position: center;
+    background-repeat: no-repeat;    
+    border: solid 1px rgba(0, 0, 0, .25);
+    border-left: none;
+}
+
+header #icons{
+    display: flex;
+    margin: 10px;
+    gap: 24px;
+    align-items: center;
+}
+
+header #icons #share-video, #bell{
+    width: 34px;
+    height: 24px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-color: transparent;
+    border: none;
+}
+
+header #icons #share-video{
+    background-image: url('../images/video.png');
+}
+
+header #icons #bell{
+    background-image: url('../images/bell.png');
+}
+
+header #icons #profile{
+    border-radius: 50%;
+    width: 34px;
+}
+
+#watching-video{    
+    position: absolute;
+    left: 5vw;  
+    top: 95px;  
+    width: 60vw;
+    height: 90vh;
+}
+
+#watching-video #text{
+    margin: 10px;
+}
+
+#watching-video #video-bar{
+    margin: 10px;
+    margin-top: 30px;
+    display: flex;
+    justify-content: space-between;
+    width: 50vw;
+}
+#watching-video button{    
+    width: 120px;
+    height: 40px;
+}
+
+#watching-video #logo-channel{    
+    background-image: url('../images/channel.png');     
+    width: 180px;
+    height: 42px;
+    background-repeat: no-repeat;
+    background-position: center;
+    border: none;
+    background-color: transparent;
+}
+
+
+#watching-video #subscribe{
+    background-color: #CC0000;
+    color: white;
+    font-weight: 600;
+    letter-spacing: 1px;
+    border: none;
+    border-radius: 20px;
+}
+
+#watching-video #like{
+    background-color: transparent;        
+    background-image: url('../images/like.png');    
+    background-repeat: no-repeat;
+    background-position: center;
+    border: none;
+}
+
+#watching-video #deslike{
+    background-color: transparent;        
+    background-image: url('../images/deslike.png');    
+    background-repeat: no-repeat;
+    background-position: center;
+    border: none;
+}
+
+#watching-video #share{
+    background-color: transparent;        
+    background-image: url('../images/share.png');    
+    background-repeat: no-repeat;
+    background-position: center;
+    border: none;
+}
+
+#watching-video #download{
+    background-color: transparent;        
+    background-image: url('../images/download.png');    
+    background-repeat: no-repeat;
+    background-position: center;
+    border: none;
+}
+
+#watching-video #description{
+    margin: 10px;
+    margin-top: 30px;
+    width: 50vw;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+#side-bar{
+    position: absolute;
+    right: 2.5vw;
+    top: 75px;
+    width: 30vw;
+    height: 90vh;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.video-sugestion{
+    display: flex;
+}
+
+.video-sugestion #img-sugestion{
+    width: 230px;
+    height: 120px;
+    object-fit: cover;
+    margin-right: 10px;
+}
+
+.video-sugestion #infos{
+    display: flex;
+    justify-content: space-around;
+    flex-flow: column wrap;
+}
+
+.video-sugestion #name-channel{
+    margin-top: auto;
+}
+
+.video-sugestion #views{
+    margin-top: auto;
+}
+
+
+#icons #share-video:hover,
+#icons #bell:hover,
+#watching-video #logo-channel:hover,
+#watching-video #like:hover,
+#watching-video #deslike:hover,
+#watching-video #share:hover,
+#watching-video #download:hover,
+#search-bar #button-search:hover,
+#side-bar .video-sugestion:hover {
+    background-color: rgb(200, 200, 200);
+}
+
+#watching-video #subscribe:hover{    
+    background-color: rgb(150, 0, 0);
+}
+
+
+#search-bar #input-search:focus {
+    background-color: rgb(250, 250, 250);
+    border: solid 1px rgba(0, 0, 0, .25);
+    outline: none;
+}
+
+
+
