@@ -77,6 +77,13 @@ header #icons #profile{
     height: 90vh;
 }
 
+#current-video iframe {
+    width: 55vw;
+    height: 60vh; 
+    max-width: 1500px; 
+    border: none;
+}
+
 #watching-video #text{
     margin: 10px;
 }
@@ -87,6 +94,7 @@ header #icons #profile{
     display: flex;
     justify-content: space-between;
     width: 50vw;
+    flex-wrap: wrap;
 }
 #watching-video button{    
     width: 120px;
@@ -170,8 +178,8 @@ header #icons #profile{
 }
 
 .video-sugestion #img-sugestion{
-    width: 230px;
-    height: 120px;
+    width: 210px;
+    height: 100px;
     object-fit: cover;
     margin-right: 10px;
 }
@@ -180,6 +188,11 @@ header #icons #profile{
     display: flex;
     justify-content: space-around;
     flex-flow: column wrap;
+}
+
+
+.video-sugestion #infos p{
+    font-size: .9rem;
 }
 
 .video-sugestion #name-channel{
